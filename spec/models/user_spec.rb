@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
   # end
 
   it "is not valid without a password" do
-    expect(User.new(firstname: "Name")).not_to be_valid
+    expect(User.new(first_name: "Name")).not_to be_valid
   end
 
   it 'should have many fishtanks' do
