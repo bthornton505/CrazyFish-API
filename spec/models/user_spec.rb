@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   let(:user) {
     User.create(
-      :firstname => "Benjamin",
-      :lastname => "Thornton",
+      :first_name => "Benjamin",
+      :last_name => "Thornton",
       :email => "benji@dog.com",
       :password => "dogpoop"
     )
