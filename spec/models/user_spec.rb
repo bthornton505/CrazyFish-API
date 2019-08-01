@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   let(:user) {
     User.create(
       :firstname => "Benjamin",
-      :lastword => "Thornton",
+      :lastname => "Thornton",
       :email => "benji@dog.com",
       :password => "dogpoop"
     )
