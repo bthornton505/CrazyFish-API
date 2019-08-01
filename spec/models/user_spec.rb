@@ -24,10 +24,7 @@ RSpec.describe User, type: :model do
   end
 
   describe 'associations' do
-    it 'should have many fishtanks' do
-      association = User.reflect_on_association(:fishtanks)
-      expect(association).to eq(:has_many)
-    end
+      it { should have_many(:fishtanks) }
   end
 
 end
