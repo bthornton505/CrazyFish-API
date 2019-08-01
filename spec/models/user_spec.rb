@@ -23,9 +23,11 @@ RSpec.describe User, type: :model do
     expect(User.new(first_name: "Name")).not_to be_valid
   end
 
-  it 'should have many fishtanks' do
-    association = User.reflect_on_association(:fishtanks)
-    expect(association).to eq(:has_many)
+  describe 'associations' do
+    it 'should have many fishtanks' do
+      association = User.reflect_on_association(:fishtanks)
+      expect(association).to eq(:has_many)
+    end
   end
 
 end
